@@ -20,6 +20,28 @@
   a.appendChild(r);
   })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
   </script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script> 
+  $(document).ready(function(){
+    $("#flip").click(function(){
+      $("#panel").slideDown("slow");
+    });
+  });
+  </script>
+  <style> 
+  #panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #ccbcad;
+    border: solid 1px #000000;
+  }
+  
+  #panel {
+    padding: 50px;
+    display: none;
+  }
+  </style>
   
     <title>adria.design</title>
 </head>
@@ -65,6 +87,16 @@
     <div class="fixed-bottom back-top">
       <a href="#"><img src="images/chevron.png"></a>
     </div>
+
+
+    <div id="flip">Hello, I am Adrienne Allen, but my friends call me Aja.</div>
+    <div id="panel">Don’t worry, we’re friends.
+
+      I’m a freelance UX/UI designer currently residing in Las Vegas, NV. 
+      
+      I design experiences for the people and sometimes I make stuff pretty. Design has been in my blood since the first time I received an E-Machine and could create my webpage using Geocities and Angelfire. 
+      </div>
+
 
     <section id="adventure">
         <h4>My UX Skills</h4>
